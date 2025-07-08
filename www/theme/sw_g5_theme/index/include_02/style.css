@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#atc02 .lt_area{overflow:hidden}
+#atc02 .lt_area img{width:100%;height:100%;object-fit:cover;object-position:center}
+#atc02 .lt_area li{position:relative;overflow:hidden;height:500px;border:1px solid #e1e1e1;border-radius:var(--radius)}
+#atc02 .lt_area li.empty{display:flex;width:33.33%;align-items:center;justify-content:center}
+#atc02 .lt_area a{display:flex;height:100%;flex-direction:column;justify-content:space-between}
+#atc02 .lt_area .txt{display:flex;flex-direction:column;justify-content:space-between;height:45%;padding:40px 50px}
+#atc02 .lt_area .img{overflow:hidden;height:55%}
+#atc02 .lt_area .img.none div{background:#f5f5f5 url(../../hd/top_menu/logo_m.png) center no-repeat !important}
+#atc02 .lt_area .img div{width:100%;height:100%;transition:all .3s}
+#atc02 .lt_area .tab{font-size:16px;font-weight:700;color:var(--primary)}
+#atc02 .lt_area h4{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;;font-size:22px;font-weight:700;color:#111}
+#atc02 .lt_area .txt svg{position:absolute;top:40px;right:50px;opacity:.5}
+#atc02 .lt_area .tit{margin-top:10px}
+#atc02 .lt_area .tit div{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;margin-top:10px;color:#777}
+#atc02 .lt_area .pager{margin-top:15px;text-align:center}
+#atc02 .lt_area .pager span{margin:0 3px;border-radius:50px;transition:all .3s;opacity:1;background:#d9d9d9}
+#atc02 .lt_area .pager .on{width:20px;background:var(--primary)}
+
+@media(hover:hover){
+#atc02 .lt_area a:hover .img div{transform:scale(1.1)}
+}
+/* 반응형 [s] */
+@media (max-width:1024px){
+#atc02{padding:0 15px}
+#atc02 .lt_area .txt{padding:30px 20px}
+#atc02 .lt_area h4{font-size:18px}
+#atc02 .lt_area .txt{height:53%}
+#atc02 .lt_area .txt svg{top:30px;right:30px}
+#atc02 .lt_area li{height:400px}
+}
+@media (max-width:768px){
+#atc02 .lt_area h4{font-size:16px}
+#atc02 .lt_area .tab{font-size:15px}
+}
+/* 반응형 [e] */

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+#atc04{position:relative;display:flex;height:850px}
+#atc04 .l_cont{display:flex;flex-direction:column;justify-content:space-around;width:50%;height:100%;padding-left:calc((100% - 1400px)/2);border-radius:0 30px 30px 0;background:url('./img/inc04_bg2.jpg') no-repeat;background-size:cover}
+#atc04 .tabs_area li{position:relative;font-size:25px;font-weight:700;color:rgba(0,0,0,.5);cursor:pointer;transition:all .3s}
+#atc04 .tabs_area li:before{opacity:0;position:absolute;content:'';left:0;top:15px;width:6px;height:6px;border-radius:50px;background:var(--primary);transition:all .3s}
+#atc04 .tabs_area li+li{margin-top:20px}
+#atc04 .tabs_area li:hover{padding-left:10px}
+#atc04 .tabs_area li.on{padding-left:20px;color:var(--primary)}
+#atc04 .tabs_area .tabs{display:inline-flex;flex-direction:column}
+#atc04 .tabs_area li.on:before{opacity:1}
+#atc04 .tab_page{width:50%;height:100%;background:url('./img/inc04_bg.jpg') no-repeat center 97%}
+#atc04 .tab_page .tab_cont{display:none;width:100%;height:100%}
+#atc04 .clg_cont{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:100%;text-align:center}
+#atc04 .clg_cont .e_txt{font-size:35px;font-weight:400;color:#ddd;text-transform:uppercase}
+#atc04 .clg_cont .k_txt{font-size:50px;font-weight:700;color:#111}
+#atc04 .clg_cont .info{position:relative;margin-top:20px;padding-top:125px}
+#atc04 .clg_cont .info:after{position:absolute;content:'';top:0;left:50%;width:1px;height:95px;border:1px solid #e1e1e1;transform:translateX(-50%)}
+#atc04 .clg_cont .info p{margin-bottom:10px;font-size:35px;font-weight:700;color:var(--primary)}
+#atc04 .clg_cont .info{font-size:15px;color:#111}
+#atc04 .cir_link{position:absolute;top:50%;left:50%;z-index:10;text-align:center;transform:translateX(-50%)}
+#atc04 .cir_link a{display:flex;align-items:center;justify-content:center;width:135px;height:135px;border-radius:50%;font-size:16px;font-weight:700;color:#fff;background:linear-gradient(0deg, #3D000C, #7C0019);transition:all .3s}
+#atc04 .cir_link a:before{position:absolute;background:url('./img/roll_txt.png');content:'';left:50%;top:50%;width:170px;height:175px;transform:translate(-50%, -50%) rotate(0deg);animation:roll_txt 10s linear infinite}
+@keyframes roll_txt {100%{transform:translate(-50%, -50%) rotate(360deg)}}
+
+@media(hover:hover){
+#atc04 .cir_link a:hover{transform:scale(1.1)}
+}
+/* 반응형 [s] */
+@media (max-width:1024px){
+#atc04{flex-direction:column}
+#atc04 .atc_tit{justify-content:center !important}
+#atc04 .l_cont{position:relative;display:block;width:100%;height:40%;padding:70px 15px 0;border-radius:0;background-position:center 30%}
+#atc04 .tab_page{width:100%}
+#atc04 .tabs_area li{font-size:20px}
+#atc04 .clg_cont .e_txt{font-size:30px}
+#atc04 .clg_cont .k_txt{font-size:35px}
+#atc04 .clg_cont .info p{font-size:25px}
+#atc04 .cir_link{top:35%}
+#atc04 .cir_link a{width:110px;height:110px;font-size:14px}
+#atc04 .cir_link a:before{width:140px;height:145px;background-size:100%;background-repeat:no-repeat}
+#atc04 .tab_page{height:60%;padding-top:100px}
+#atc04 .tabs_area{text-align:center}
+#atc04 .tabs_area .tabs{flex-direction:unset;gap:20px}
+#atc04 .tabs_area li+li{margin-top:0}
+#atc04 .tabs_area li.on{padding-left:0}
+#atc04 .tabs_area li.on:before{display:none}
+}
+@media (max-width:768px){
+#atc04{height:auto}
+#atc04 .l_cont{height:300px}
+#atc04 .clg_cont .e_txt{font-size:25px}
+#atc04 .clg_cont .k_txt{font-size:28px}
+#atc04 .clg_cont .info{padding-top:75px;font-size:14px}
+#atc04 .clg_cont .info p{font-size:20px}
+#atc04 .clg_cont .info:after{height:50px}
+#atc04 .clg_cont .info div{padding:0 15px}
+#atc04 .tabs_area .tabs{flex-wrap:wrap;justify-content:center;gap:0 20px}
+#atc04 .cir_link{top:50%;transform:translate(-50%, -70%)}
+}
+@media (max-width:480px){
+#atc04 .clg_cont .e_txt{font-size:20px}
+#atc04 .tabs_area li{font-size:16px}
+#atc04 .clg_cont .k_txt{font-size:23px}
+}
+@media (max-width:390px){
+#atc04 .clg_cont .e_txt{font-size:16px}
+#atc04 .clg_cont .k_txt{font-size:20px}
+#atc04 .clg_cont .info p{font-size:20px}
+}
+/* 반응형 [e] */

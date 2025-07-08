@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#shSubBnr{position:relative;overflow:hidden;height:450px;background:#000}
+#shSubBnr #mainImg{width:100%;height:450px;background-size:cover}
+
+#shSubBnr .sub_nav{position:absolute;z-index:10;left:50%;top:50%;max-width:var(--mainsize);margin:0 auto;color:#fff;transform:translate(-50%, -50%)}
+#shSubBnr .tit{overflow:hidden;position:relative;z-index:1;margin-top:30px;font-size:46px;font-weight:700;font-family:'pretendard'}
+#shSubBnr .crumb{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700}
+#shSubBnr .crumb svg{width:20px;color:#fff}
+
+@media (max-width:1024px){
+#shSubBnr{height:300px}
+#shSubBnr .sub_nav{text-align:center}
+#shSubBnr .tit{margin-top:10px;font-size:35px}
+}
